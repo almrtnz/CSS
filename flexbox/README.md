@@ -2,7 +2,7 @@
 
 [Source: mdn web docs__](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
 
-[`flex`](##flex-shorthand) | [`flex-direction`](###flex-direction) | [`order`](###order) | [`flex-flow`](##the-flex-flow-shorthand)  
+[`flex`](#flex-shorthand) | [`flex-direction`](#flex-direction) | [`order`](#order) | [`flex-flow`](#the-flex-flow-shorthand)  
 
 ---
 
