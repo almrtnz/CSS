@@ -1,0 +1,86 @@
+body {
+	background: lightgreen;
+	text-align: center;
+	font-family: monospace;
+	font-size: 16px;
+}
+
+.flex-container {
+	/* basic styling */
+	border: 4px solid lightseagreen;
+	background: white;
+	padding: 16px;
+	width: 75vw;
+	margin: 0 auto;
+	height: 75vh;
+
+	/* FLEXBOX */
+	display: flex;
+	flex-direction: row; /* row, column, column-reverse, row-reverse*/
+	flex-wrap: wrap; /* default is nowrap */
+	flex-flow: row wrap; /* shorthand that combines flex-direction & flex-wrap */
+
+	/* FLEXBOX HORIZONTAL ALIGN */
+	/* justify-content: baseline, center, end, first baseline, flex-end, flex-start, last baseline, left, right, safe, space-around, space-between, space-evenly, start, stretch, unsafe*/
+	justify-content: center;
+
+	/* FLEXBOX VERTICAL ALIGN */
+	/* justify-content: baseline, center, flex-end, flex-start, stretch */
+	align-items: stretch;
+
+	/* FLEXBOX ALIGN CONTENT */
+	/* align-content: center, flex-end, flex-start, space-around, space-between, stretch */
+	align-content: center;
+}
+
+.box {
+	/* basic styling */
+	border: 4px dotted blue;
+	background: lightsteelblue;
+	color: black;
+
+	font-weight: bold;
+	width: 160px;
+	height: 90px;
+	margin: 6px;
+
+	/* center text inside the box with flex */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* First box color */
+.box:first-of-type {
+	background: lightgreen;
+}
+
+/* Last box color */
+.box:last-of-type {
+	background: lightcoral;
+}
+
+/* FLEXBOX flex-grow, flex-shrink, flex-basis, order */
+
+.box-1 {
+	flex-grow: 1; /* how many items will expand */
+	flex-basis: 50%; /* how much width will take this item */
+	order: 3; /* order of appearance in reference with the other items */
+	/* all items in the flexbox container must have an order set */
+}
+
+.box-2 {
+	order: 1; /* this item will move to the first place */
+}
+.box-3 {
+	order: 2; /* this item will move to the second place */
+}
+.box-4 {
+	flex-grow: 1; /* this item will grow */
+	order: 4;
+}
+.box-5 {
+	flex-grow: 5;
+	flex-shrink: 3;
+	order: 5;
+}
