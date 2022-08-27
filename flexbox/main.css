@@ -20,16 +20,13 @@ body {
 	flex-wrap: wrap; /* default is nowrap */
 	flex-flow: row wrap; /* shorthand that combines flex-direction & flex-wrap */
 
-	/* FLEXBOX HORIZONTAL ALIGN */
-	/* justify-content: baseline, center, end, first baseline, flex-end, flex-start, last baseline, left, right, safe, space-around, space-between, space-evenly, start, stretch, unsafe*/
+	/* HORIZONTAL ALIGN */
 	justify-content: center;
 
-	/* FLEXBOX VERTICAL ALIGN */
-	/* justify-content: baseline, center, flex-end, flex-start, stretch */
+	/* VERTICAL ALIGN */
 	align-items: stretch;
 
-	/* FLEXBOX ALIGN CONTENT */
-	/* align-content: center, flex-end, flex-start, space-around, space-between, stretch */
+	/* ALIGN CONTENT */
 	align-content: center;
 }
 
@@ -66,7 +63,6 @@ body {
 	flex-grow: 1; /* how many items will expand */
 	flex-basis: 50%; /* how much width will take this item */
 	order: 3; /* order of appearance in reference with the other items */
-	/* all items in the flexbox container must have an order set */
 }
 
 .box-2 {

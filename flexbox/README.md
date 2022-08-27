@@ -6,13 +6,43 @@
 
 ---
 
+```css
+display: flex;
+flex-direction: row | column | column-reverse | row-reverse;
+flex-wrap: wrap | nowrap;
+flex-flow: row wrap; /* shorthand */
+
+/* Horizontal align: */
+justify-content: baseline | center | end | first baseline | flex-end | flex-start | last baseline | left | right | safe | space-around | space-between | space-evenly | start | stretch | unsafe;
+
+/* Vertical align: */
+align-items: baseline | center | flex-end | flex-start | stretch;
+
+/* Align content: */
+align-content: center | flex-end | flex-start | space-around | space-between | stretch;
+```
+
+---
+
 ## `flex` shorthand
 
-order: `flex-grow` `flex-shrink` `flex-basis`
+```css
+/* in this order */
+flex-grow flex-shrink flex-basis 
+```
 
-default: `.flex-container { flex: 0 1 auto; }`
+default:
 
-example: `.flex-container{ flex: 1.7 2 340px; }`
+```css
+/* flex-grow: 0; flex-shrink: 1; flex-basis: auto */
+.flex-container { flex: 0 1 auto; }
+```
+
+example:
+
+```css
+.flex-container { flex: 1.7 2 340px; }
+```
 
 ### `flex-grow`
 
